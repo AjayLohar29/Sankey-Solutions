@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap');
+
+html,body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#heading{
+    margin:60px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    text-decoration: underline;
+}
+
+
+.tab{
+    margin:50px auto;
+    width: 60%;
+}
+
+table{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+th,td{
+    border: 1px solid black; 
+    border-radius: 3px;
+    padding: 10px;
+}
+
+th{
+    background-color: #393646;
+    color: white;
+}
+tbody{
+    background-color: #F4EEE0;
+
+}
+td{
+    color:black;
+
+}
+
+.frm{
+    margin: auto;
+    width: 60%;
+    height: 100px;
+    display: flex;
+}
+
+
+span{
+    color: red;
+}
+
+.EMP{
+    display: flex;
+    flex-direction: column;
+}
+#empForm{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+input{
+    height: 35px;
+    width: 200px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+select{
+    height: 35px;
+    border-radius: 4px;
+}
+
+#addButton{
+    width: 90px;
+    height: 35px;
+    color: white;
+    background-color: #04c32d;
+    border: 1px solid #04c32d;
+    border-radius: 4px;
+
+}
+
+#addButton:hover{
+    background-color: #048f22;
+}
+
+#updButton{
+    width: 90px;
+    height: 35px;
+    color: white;
+    background-color: #04c32d;
+    border: 1px solid #04c32d;
+    border-radius: 4px;
+
+}
+
+#updButton:hover{
+    background-color: #048f22;
+}
+
+
+.dBtn{
+    width: 70px;
+    height: 35px;
+    color : white;
+    background-color: rgba(235, 29, 29, 0.966);
+    border: 1px solid rgba(235, 29, 29, 0.966);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.dBtn:hover{
+    background-color: rgba(206, 20, 20, 0.966);
+}
+
+.eBtn{
+    width: 70px;
+    height: 35px;
+    color : white;
+    background-color: rgb(36, 105, 196);
+    border : 1px solid rgb(36, 105, 196);
+    border-radius: 4px;
+}
+
+.eBtn:hover{
+    background-color: rgb(30, 91, 170);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Portal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1 id="heading">Employee Portal</h1>
+            <div class="tab">
+                <table id="empTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+        
+                    </tbody>
+        
+                </table>
+            </div>
+            <div class="frm">
+                <form autocomplete="off" action="" id="empForm">
+                    <div class="EMP ID">
+                        <input type="number" id="empId" placeholder="Emp ID" required>
+                        <span id="Iderror"></span>
+                    </div>
+                    <div class="EMP name">
+                        <input type="text" id="empName" placeholder="Name" required>
+                        <span id="Nameerror"></span>
+                    </div>
+                    <div class="EMP age">
+                        <input type="number" id="empAge" placeholder="Age" required>
+                        <span id="Ageerror"></span>
+                    </div>
+                    <div class="EMP gender">
+                        <select name="" id="empGender" required>
+                            <option disabled selected value="">Select Gender</option> 
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span id="Gendererror"></span>
+                    </div>
+                    <div class="EMP Btn">
+                        <button id="addButton" type="submit">ADD</button>
+                        <button id="updButton" type="submit" style="display: none;">UPDATE</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        
+
+    </body>
+</html>
