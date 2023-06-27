@@ -8,7 +8,7 @@ html,body{
 
 .main{
     width: 100%;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     padding: 20px;
 }
@@ -27,7 +27,7 @@ html,body{
 }
 
 table{
-    height: 200px;
+    height: 100%;
     width: 100%;
     text-align: center;
 }
@@ -48,7 +48,7 @@ tbody{
 }
 td{
     color:black;
-
+    height: 20px;
 }
 
 .frm{
@@ -61,6 +61,7 @@ td{
 
 span{
     color: red;
+    font-size: 12px;
 }
 
 .EMP{
@@ -102,7 +103,7 @@ select{
 }
 
 #updButton{
-    width: 90px;
+    width: 65px;
     height: 35px;
     color: white;
     background-color: #04c32d;

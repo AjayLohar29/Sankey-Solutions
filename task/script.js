@@ -2,6 +2,7 @@ let empArr = [];
 let dltIds = [];
 
 
+
 var addBtn = document.getElementById("addButton");
 addBtn.addEventListener("click",addData);
 
@@ -19,7 +20,6 @@ function addData(){
     if(!validate(Id,Name,Age,Gender)){
         return;
     }
-    
 
     let empObj = {
         id : Id,
@@ -40,10 +40,12 @@ function addData(){
 
 
 function validate(Id,Name,Age,Gender){
-
+    
     if(Id==""){
         document.getElementById("Iderror").innerHTML="Id value is required.";
         return false;
+    }else{
+        document.getElementById("Iderror").innerHTML="";
     }
 
     var exp = /^[A-Za-z]+$/;
@@ -166,20 +168,27 @@ let updIdx = 0;
 function editData(idx){
     console.log("edit"+idx);
     updIdx = idx;
+    
     let emp = empArr[idx]; 
+    document.getElementById("Iderror").innerHTML="";
+    document.getElementById("Gendererror").innerHTML="";
+    document.getElementById("Ageerror").innerHTML="";
+    document.getElementById("Nameerror").innerHTML="";
 
     document.getElementById("empId").value = emp.id;
     document.getElementById("empName").value = emp.name;
     document.getElementById("empAge").value = emp.age;
     document.getElementById("empGender").value = emp.gender;
 
-    empArr[idx].id = 0;
+    // empArr[idx].id = null;
 
     let addButton = document.getElementById('addButton');
     addButton.style.display = 'none';
 
     let updButton = document.getElementById('updButton');
     updButton.style.display = 'block';
+
+       
 }
 
 let updButton = document.getElementById('updButton');
@@ -187,6 +196,7 @@ updButton.addEventListener('click', updData);
 
 function updData(){
     event.preventDefault();
+    empArr[updIdx].id = null;
     let Id = document.getElementById("empId").value;
     let Name = document.getElementById("empName").value;
     let Age = document.getElementById("empAge").value;
@@ -223,10 +233,17 @@ function updData(){
     addButton.style.display = 'block';
     let updButton = document.getElementById('updButton');
     updButton.style.display = 'none';
-
+   
+    
 }
 
 function deleteEmp(idx){
+    document.getElementById("Iderror").innerHTML="";
+    document.getElementById("Gendererror").innerHTML="";
+    document.getElementById("Ageerror").innerHTML="";
+    document.getElementById("Nameerror").innerHTML="";
+
+
     let emp = empArr[idx];
     dltIds.push(emp.id);
     console.log(dltIds)
@@ -238,5 +255,12 @@ function deleteEmp(idx){
         displayData(empArr);
     }
 
+    clear();
+    let addButton = document.getElementById('addButton');
+    addButton.style.display = 'block';
+
+    let updButton = document.getElementById('updButton');
+    updButton.style.display = 'none';
+    
     
 }
