@@ -1,0 +1,220 @@
+.todo{
+    width:800px;
+    height: 250px;
+    background-color: #f1eeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px gainsboro;
+}
+
+#title{
+    height: 35px;
+    width: 700px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid black solid gray;
+    border-radius: 4px;
+    margin-top: 30px;
+    /* margin-bottom: 25px; */
+}
+
+#Titleerror{
+    margin-bottom: 15px;
+}
+
+span{
+    color: red;
+    font-size: 12px;
+}
+
+.st{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    height: 40px;
+    margin-bottom: 40px;
+    /* background-color: black; */
+}
+
+#startDate{
+    height: 30px;
+    border-radius: 4px;
+}
+
+.ttl{
+    display: flex;
+    flex-direction: column;
+}
+
+#titleerror{
+    margin-top: 2px;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+}
+
+.opt{
+    display: flex;
+    flex-direction: column;
+}
+
+#endDate{
+    height: 30px;
+    border-radius: 4px;
+}
+
+.edt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+
+select{
+    height: 55px;
+    width: 120px;
+    border-radius: 4px;
+}
+
+#addButton{
+    width: 120px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: medium;
+    color: white;
+    background-color: #04c32d;
+    border: 1px solid  solid #04c32d;
+    border-radius: 4px;
+}
+
+#addButton:hover{
+    background-color: #048f22;
+}
+
+.srch{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    margin-top: -19px;
+    justify-content: space-around;
+}
+
+#searchInput{
+    width: 660px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid black solid gray;
+    border-radius: 4px;
+}
+
+#srchButton{
+    width: 90px;
+    height: 35px;
+    color: white;
+    background-color: rgb(55, 121, 207);
+    border : 1px solid black solid rgb(55, 121, 207);
+    border-radius: 4px;
+}
+
+#srchButton:hover{
+    background-color: rgb(30, 91, 170);
+}
+
+#heading{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.tab{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+table{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+th{
+    background-color: #C4D7B2;
+    text-align: center;
+    height: 30px;
+}
+
+
+tbody{
+    text-align: center;
+    background-color: #F7FFE5;
+}
+
+.eBtn{
+    width: 70px;
+    height: 35px;
+    color : white;
+    background-color: rgb(36, 105, 196);
+    border : 1px solid black solid rgb(36, 105, 196);
+    border-radius: 4px;
+}
+
+.eBtn:hover{
+    background-color: rgb(30, 91, 170);
+}
+
+#updButton{
+    width: 65px;
+    height: 35px;
+    color: white;
+    background-color: #04c32d;
+    border: 1px solid #04c32d;
+    border-radius: 4px;
+
+}
+
+#updButton:hover{
+    background-color: #048f22;
+}
+
+#rsButton{
+    width: 65px;
+    height: 35px;
+    margin-top: 5px;
+    color: white;
+    background-color: rgba(235, 29, 29, 0.966);
+    border: 1px solid rgba(235, 29, 29, 0.966);
+    border-radius: 4px;
+}
+
+#rsButton:hover{
+    background-color: rgba(206, 20, 20, 0.966);
+}
+
+
+.dBtn{
+    width: 70px;
+    height: 35px;
+    color : white;
+    background-color: rgba(235, 29, 29, 0.966);
+    border: 1px solid black solid rgba(235, 29, 29, 0.966);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.dBtn:hover{
+    background-color: rgba(206, 20, 20, 0.966);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo">
+            <div class="ttl">
+                <input type="text" id="title" placeholder="Activity Title" pattern="^[A-Za-z0-9\s]+$" required>
+                <span id="Titleerror"></span>
+            </div>
+
+            <div class="st">
+                <div class="stD">
+                    <label id="stDate">Start Date:</label>
+                    <div class="start">
+                        <input type="date" id="startDate" required>
+                        <span id="stDerror"></span>
+                    </div>
+                </div>
+                
+                <div class="enD">
+                    <label id="enDate">End Date:</label>
+                    <div class="end">
+                        <input type="date" id="endDate" required onchange="updateStatus()">
+                        <span id="enDerror"></span>
+                    </div>
+                </div>
+                
+                <div class="opt">
+                    <label for="">Status</label>
+                    <select id="status" required>
+                                            </select>
+                    <span id="stserror"></span>
+                </div>
+                
+            </div>
+            <div class="addBtn">
+                <button id="addButton" type="submit">Add Task</button>
+                <div class="edt">
+                    <button id="updButton" type="submit" style="display: none;">UPDATE</button>
+                    <button id="rsButton" type="reset" style="display: none;">CANCEL</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="srch">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="srchButton">Search</button>
+        </div>
+        <h1 id="heading">Activities List</h1>
+        <div class="tab">
+            <table id="taskTab" >
+                <thead >
+                    <tr>
+                        <th style="width: 600px;">Title</th>
+                        <th style="width: 200px;">Start Date</th>
+                        <th style="width: 200px;">End Date</th>
+                        <th style="width: 200px;">Status</th>
+                        <th style="width: 200px;">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+            
+                </tbody>
+    
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
