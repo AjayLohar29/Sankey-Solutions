@@ -270,9 +270,6 @@ function updData(){
 }
 
 
-var dltBtn = document.getElementsByClassName("dBtn");
-dltBtn.addEventListener("click",deleteD);
-
 function deleteD(idx){
 
     clearError();
